@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Experience</h2>
+
+<div class="experience-list">
+
+  <div class="exp-card">
+    <img src="{{ url_for('static', filename='pgc_logo.jpg') }}" alt="Pakistan Games Collective Logo">
+    <div class="exp-details">
+      <h3>Game Development Intern</h3>
+      <h4>Pakistan Games Collective · Internship</h4>
+      <p><strong>Jul 2025 – Present · 2 mos</strong></p>
+      <p>Lahore, Punjab, Pakistan · Remote</p>
+      <ul>
+        <li>🎨 Game Design</li>
+        <li>👾 Development Tools & Engines</li>
+        <li>💡 Creative Storytelling</li>
+        <li>🤝 Team Collaboration</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="exp-card">
+    <img src="{{ url_for('static', filename='comion_logo.png.jpg') }}" alt="Comion LLC Logo">
+    <div class="exp-details">
+      <h3>Database Developer</h3>
+      <h4>Comion LLC · Part-time</h4>
+      <p><strong>Feb 2025 – Jun 2025 · 5 mos</strong></p>
+      <p>Lahore, Punjab, Pakistan · Remote</p>
+      <ul>
+        <li>🗃️ Customer database management</li>
+        <li>🧮 SQL-based backend systems</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Syed Raza Abbas Zaidi</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Raza Zaidi</div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('projects') }}">Projects</a></li>
+      <li><a href="{{ url_for('certificates') }}">Certificates</a></li>
+      <li><a href="{{ url_for('experience') }}">experience</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    
+    </ul>
+  </nav>
+
+  <main>
+    <h1>My Projects</h1>
+    <div class="projects">
+      <div class="project-card">
+        <h2>Rainfall Prediction Classifier</h2>
+        <p>Predicts rainfall using ML techniques and weather data.</p>
+      </div>
+      <div class="project-card">
+        <h2>Hospital Management System</h2>
+        <p>Flask + MySQL full-stack project for managing hospitals.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

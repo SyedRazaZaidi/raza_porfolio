@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Syed Raza Abbas Zaidi | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Raza Zaidi</div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('projects') }}">Projects</a></li>
+      <li><a href="{{ url_for('certificates') }}">Certificates</a></li>
+      <li><a href="{{ url_for('experience') }}">experience</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    
+    </ul>
+  </nav>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

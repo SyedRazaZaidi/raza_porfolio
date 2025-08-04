@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Education</h2>
+
+<div class="education-list">
+
+  <!-- Degrees -->
+  <div class="edu-card">
+    <img src="{{ url_for('static', filename='ucp_logo.jpg') }}" alt="UCP Logo">
+    <div class="edu-details">
+      <h3>BS Artificial Intelligence</h3>
+      <h4>University of Central Punjab</h4>
+      <p><strong>Oct 2023 – Jul 2027</strong></p>
+      <p>Grade: 3.36</p>
+      <p>Activities: Sports Society, Team Management</p>
+      <p>Skills: English, SQL, +8 others</p>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <img src="{{ url_for('static', filename='pgc_logo..jpg') }}" alt="Punjab Group Logo">
+    <div class="edu-details">
+      <h3>FSc Pre-Medical</h3>
+      <h4>Punjab Group Of Colleges</h4>
+      <p><strong>Oct 2021 – Jun 2023</strong></p>
+      <p>Grade: B+</p>
+      <p>Skills: English, Presentation Skills, +3 others</p>
+    </div>
+  </div>
+
+  
+
+</div>
+{% endblock %}

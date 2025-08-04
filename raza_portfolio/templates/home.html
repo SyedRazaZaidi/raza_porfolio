@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Syed Raza Abbas Zaidi | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Raza Zaidi</div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('projects') }}">Projects</a></li>
+      <li><a href="{{ url_for('certificates') }}">Certificates</a></li>
+      <li><a href="{{ url_for('experience') }}">experience</a></li>
+      <li><a href="{{ url_for('education') }}">Education</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    
+    </ul>
+  </nav>
+
+  <main class="hero">
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Syed Raza Abbas Zaidi">
+
+    <h1>Hello! I'm Syed Raza Abbas Zaidi</h1>
+    <p>Aspiring Developer | Python, Flask, ML</p>
+
+    <h2>Career Highlights</h2>
+    <div class="highlights-container">
+      <div class="highlight-card">
+        <img src="{{ url_for('static', filename='machine_learning_ibm.jpg') }}" alt="IBM ML">
+        <h3>Machine Learning with Python</h3>
+        <p>Issued by IBM (Jul 2025)<br>
+          <a href="https://www.coursera.org/account/accomplishments/records/W4TNJKJR5MVT" target="_blank">View Certificate</a>
+        </p>
+      </div>
+      <div class="highlight-card">
+        <img src="{{ url_for('static', filename='web_dev_microsoft.jpg') }}" alt="Microsoft Web Dev">
+        <h3>Web Development with Python</h3>
+        <p>Issued by Microsoft (Aug 2025)<br>
+          Credential ID: KIT0PRBWJ1JR
+        </p>
+      </div>
+      <div class="highlight-card">
+        <img src="{{ url_for('static', filename='python3_michigan.jpg') }}" alt="Python 3 Programming">
+        <h3>Python 3 Programming</h3>
+        <p>University of Michigan (Jul 2025)<br>
+          Credential ID: IU3JU0XX3D9M
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

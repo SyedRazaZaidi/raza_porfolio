@@ -1,0 +1,250 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+
+main {
+  padding: 2em;
+}
+
+.navbar {
+  background-color: #1f2937;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5em;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00bcd4;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: #00bcd4;
+}
+
+.navbar .nav-links li a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.hero img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00bcd4;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hero a {
+  display: inline-block;
+  margin-top: 1em;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1em;
+  width: 45%;
+}
+
+/* Career Highlights Section */
+.highlights-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  padding: 1em 0;
+  scroll-snap-type: x mandatory;
+}
+
+.highlight-card {
+  flex: 0 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 8px;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.highlight-card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+.highlight-card h3 {
+  margin: 0.5em 0 0.2em;
+  color: #00bcd4;
+}
+
+.highlight-card p {
+  font-size: 0.95em;
+}
+
+.highlight-card a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.cert-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1em;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.cert-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em 0;
+}
+
+.exp-card {
+  display: flex;
+  gap: 1.5em;
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  align-items: flex-start;
+}
+
+.exp-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.exp-details h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #1f2937;
+}
+
+.exp-details h4 {
+  margin: 0.3em 0;
+  font-weight: normal;
+  color: #555;
+}
+
+.exp-details p {
+  margin: 0.3em 0;
+  color: #666;
+}
+
+.exp-details ul {
+  margin: 0.5em 0 0 1em;
+  padding: 0;
+  color: #333;
+}
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em 0;
+}
+
+.edu-card {
+  display: flex;
+  gap: 1.5em;
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  align-items: flex-start;
+}
+
+.edu-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.edu-details h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #1f2937;
+}
+
+.edu-details h4 {
+  margin: 0.3em 0;
+  font-weight: normal;
+  color: #555;
+}
+
+.edu-details p {
+  margin: 0.3em 0;
+  color: #666;
+}
+
+.edu-details a {
+  color: #00bcd4;
+  text-decoration: none;
+}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Certificates</h2>
+
+
+
+  <div class="cert-card">
+    <img src="{{ url_for('static', filename='web_dev_microsoft.jpg') }}" alt="Microsoft Web Dev">
+    <h3>Web Development with Python</h3>
+    <p>Microsoft – Aug 2025</p>
+    <p>Credential ID: KIT0PRBWJ1JR</p>
+  </div>
+
+  <div class="cert-card">
+    <img src="{{ url_for('static', filename='python3_michigan.jpg') }}" alt="Python 3">
+    <h3>Python 3 Programming</h3>
+    <p>University of Michigan – Jul 2025</p>
+    <p>Credential ID: IU3JU0XX3D9M</p>
+  </div>
+
+  <div class="cert-card">
+    <img src="{{ url_for('static', filename='software_eng_michigan.jpg') }}" alt="Image Manipulation">
+    <h3>Software Engineering & Image Manipulation</h3>
+    <p>UM Dearborn – Jul 2025</p>
+    <p>Credential ID: 1LTF5MV4WJAE</p>
+  </div>
+
+  <div class="cert-card">
+    <img src="{{ url_for('static', filename='cybersecurity_infosec.jpg') }}" alt="Cybersecurity">
+    <h3>Applied ChatGPT for Cybersecurity</h3>
+    <p>Infosec – Jun 2025</p>
+    <p>Credential ID: D8CCRPXOVBAF</p>
+  </div>
+</div>
+{% endblock %}
